@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@plugin "@tailwindcss/forms";
+
+/*Change web page theme*/
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+@theme {
+
+
+    --color-primary: #3f68e4;
+    --color-accent-orange: #f97316;
+    --color-background-light: #f6f6f8;
+    --color-background-dark: #111521;
+    --color-background-gray: oklch(12.9% 0.042 264.695)
+
+
+    --font-Family: "Public Sans", sans-serif
+    
+    
+}
+
+
+
+
+
+

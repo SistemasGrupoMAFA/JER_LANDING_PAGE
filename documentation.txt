@@ -1,0 +1,6 @@
+**Tailwind form plugin**
+https://github.com/tailwindlabs/tailwindcss-forms
+
+**Tailwind container plugin**
+https://github.com/tailwindlabs/tailwindcss-container-queries
+Note: By default on tailwind v4
