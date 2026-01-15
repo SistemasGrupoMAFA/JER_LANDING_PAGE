@@ -1,6 +1,9 @@
 @import "tailwindcss";
-
 @plugin "@tailwindcss/forms";
+@import"tailwindcss-intersect";
+@plugin "tailwindcss-intersect";
+
+
 
 /*Change web page theme*/
 @custom-variant dark (&:where(.dark, .dark *));

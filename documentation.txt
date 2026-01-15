@@ -4,3 +4,9 @@ https://github.com/tailwindlabs/tailwindcss-forms
 **Tailwind container plugin**
 https://github.com/tailwindlabs/tailwindcss-container-queries
 Note: By default on tailwind v4
+
+**Tailwind animations**
+https://tailwind-animations.com/
+
+**Scroll animation**
+https://github.com/heidkaemper/tailwindcss-intersect?tab=readme-ov-file
