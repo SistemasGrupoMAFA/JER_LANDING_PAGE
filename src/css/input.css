@@ -16,11 +16,14 @@
     --color-accent-orange: oklch(85.9% 0.240 50.08);
     --color-background-light: oklch(98.4% 0.003 247.858);
     --color-background-dark: oklch(12.9% 0.042 264.695);
+   
     --color-background-gray: oklch(12.9% 0.042 264.695);
     --color-background-green:oklch(84.1% 0.238 128.85);
 
 
     --font-Family: "Public Sans", sans-serif
+
+    
     
     
 }

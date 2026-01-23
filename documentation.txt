@@ -10,3 +10,7 @@ https://tailwind-animations.com/
 
 **Scroll animation**
 https://github.com/heidkaemper/tailwindcss-intersect?tab=readme-ov-file
+
+
+**SLIDE TEXT ON HEADER**
+https://ibelick.com/blog/create-text-sliding-effect-with-tailwind-css
