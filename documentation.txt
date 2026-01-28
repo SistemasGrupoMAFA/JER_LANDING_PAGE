@@ -14,3 +14,7 @@ https://github.com/heidkaemper/tailwindcss-intersect?tab=readme-ov-file
 
 **SLIDE TEXT ON HEADER**
 https://ibelick.com/blog/create-text-sliding-effect-with-tailwind-css
+
+
+**Run tailwind**
+npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch
