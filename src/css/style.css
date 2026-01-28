@@ -10,9 +10,9 @@ html {
 
 
 
-/*Carousel images*/
+
 .carousel-slide {
-            transition: opacity 2s ease-in-out;
+            transition: opacity 1s ease-in-out;
         }
         .carousel-indicator {
             transition: all 0.3s ease;
