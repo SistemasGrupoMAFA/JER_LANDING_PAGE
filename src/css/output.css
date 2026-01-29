@@ -57,6 +57,7 @@
     --radius-2xl: 1rem;
     --radius-3xl: 1.5rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+
     --blur-md: 12px;
     --blur-3xl: 64px;
     --default-transition-duration: 150ms;
@@ -529,14 +530,21 @@
   .border-slate-200 {
     border-color: var(--color-slate-200);
   }
+
   .border-slate-800 {
     border-color: var(--color-slate-800);
   }
+
   .bg-\[\#f0f3ff\] {
     background-color: #f0f3ff;
   }
   .bg-accent-orange {
     background-color: var(--color-accent-orange);
+  }
+
+  .bg-background-dark {
+    background-color: var(--color-background-dark);
+
   }
   .bg-background-dark {
     background-color: var(--color-background-dark);
@@ -959,6 +967,13 @@
       }
     }
   }
+  .hover\:text-accent-orange {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-accent-orange);
+      }
+    }
+  }
   .hover\:text-primary {
     &:hover {
       @media (hover: hover) {
@@ -980,6 +995,7 @@
       }
     }
   }
+
   .hover\:opacity-90 {
     &:hover {
       @media (hover: hover) {
@@ -987,6 +1003,7 @@
       }
     }
   }
+
   .hover\:transition {
     &:hover {
       @media (hover: hover) {
@@ -1035,6 +1052,8 @@
       display: flex;
     }
   }
+
+
   .md\:h-14 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 14);
@@ -1108,6 +1127,7 @@
       line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
   }
+
   .md\:text-6xl {
     @media (width >= 48rem) {
       font-size: var(--text-6xl);
@@ -1120,6 +1140,7 @@
       line-height: var(--leading-tight);
     }
   }
+
   .lg\:order-1 {
     @media (width >= 64rem) {
       order: 1;
