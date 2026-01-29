@@ -23,9 +23,9 @@ html {
 /* BANNERS CAROUSEL ANIMATION */
 
  @keyframes crossfade {
-            0%, 25% { opacity: 0; transform: translateY(10px); }
-            30%, 55% { opacity: 1; transform: translateY(0); }
-            60%, 100% { opacity: 0; transform: translateY(-10px); }
+            0%, 25% { opacity: 0; transform: translateX(10px); }
+            30%, 55% { opacity: 1; transform: translateX(0); }
+            60%, 100% { opacity: 0; transform: translateX(-10px); }
         }
         .carousel-item {
             position: absolute;
