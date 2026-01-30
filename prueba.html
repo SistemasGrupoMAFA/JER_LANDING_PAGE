@@ -1,62 +1,164 @@
 <!DOCTYPE html>
-
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>About Section | SafeConsult Gallery</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
-<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white min-h-screen overflow-x-hidden">
-
-<!-- Feature Section with Carousel -->
-<section class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-<!-- Left Side: Content -->
-<div class="flex flex-col gap-8 order-2 lg:order-1">
-
+<body class="bg-background-light dark:bg-background-dark font-display text-[#0f0d1b] dark:text-white transition-colors duration-300">
+<div class="relative flex min-h-screen flex-col overflow-x-hidden">
+<!-- Header / Navigation -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-gray-200 dark:border-gray-800 px-10 py-4 bg-background-light dark:bg-background-dark">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary dark:text-white">
+<div class="size-6">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 4H30.6666V17.3334H17.3334V30.6666H4V44H44V4Z"></path>
+</svg>
 </div>
-
-<!-- Right Side: Automatic Image Carousel -->
-<div class="relative order-1 lg:order-2">
-<!-- Decorative Blur Circles -->
-<div class="absolute -top-10 -right-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl z-0"></div>
-<div class="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/10 rounded-full blur-3xl z-0"></div>
-<!-- Main Carousel Container -->
-<div class="rounded-2xl shadow-2xl relative z-10 w-full aspect-[4/5] overflow-hidden bg-slate-200 dark:bg-slate-900" id="hero-carousel">
-<!-- Slides -->
-<div class="carousel-slide absolute inset-0 opacity-100 z-10">
-<img alt="Safety engineer inspecting machinery" class="w-full h-full object-cover" data-alt="Safety engineer inspecting complex industrial machinery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDh5ScHMDkIRd0fQMYV7bDrFCwrUdWjlo5QPevtihtj6CgAJOVT1v76redP7v8_1XRtuJ8o8wIZioeDtblNkL977Y9yDTIP4i74NdMgC2WOw-D_W0TVn4hW4W2N2qg-ai1EEh_DxoehD98cV3EjN6R88kwB4qHuS9f1K-GcpDMDA55OUcDT-uuSjFW6GSsjTUOPjqznYRjeFV5ZWYBfivwU-zbtj2dfr645gqumeUkrgdhIRHpYvHDTkxAI8FQQk8AfEq5Oppk1gb08"/>
+<h2 class="text-lg font-extrabold leading-tight tracking-[-0.015em]">Bento Gallery</h2>
 </div>
-<div class="carousel-slide absolute inset-0 opacity-0 z-0">
-<img alt="Construction site workers in safety gear" class="w-full h-full object-cover" data-alt="Group of construction workers wearing high-visibility safety gear" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ6e7ehYzpzqyaSMU_yKq8JFKCOgWA5bxOdaBqir2f00dZxE2LaKFrSXvfo_If0DJs6rh54mP75L65-TANJVKokOj-js1Fzk5fyBv8vhEFY6YIqTFIQ-xE40brkBACGfdMJor4Wx9geQhOmaXs-RRgvUjmBqZ1X0sZAIe328JUHAk-qgpVo0GTIRetjp515Tr6ciHAo34OX7oX2hDWTlm0VOsdG-Q8HUWiaGX4ltQj_Hr_8A8pXX0PZ_T-0SCS-zLoGZP0LNaengDA"/>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Portfolio</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Services</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Insights</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
 </div>
-<div class="carousel-slide absolute inset-0 opacity-0 z-0">
-<img alt="Wind turbine maintenance team" class="w-full h-full object-cover" data-alt="Maintenance team working on a renewable energy wind turbine" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQHgvolpTxg03Yh2NYAlPv4DGiifS7NdsY5QJ5lkYTzgmsJM-z_4xZu_u8-iHjyyd3Q8n0dWtDY4_iopEZuGKMZbC6ZCF9QQK3Syi8zDKmZT0crcN-FFrVKKWbTTWZ3-T4W9tCi8shri4xN9PsDss0kWNN8CMu7JVKW7x0ngzHFzV7xPmIAly8xq9WZ67ax1r5vk2jUlsesGwFEJwxkw1KCjeoZyeHJAFgtq2vx3keAb3U9s9S2omnOrNkYYzOSVV3dYWCISKsg65S"/>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<div class="hidden lg:flex w-full max-w-xs items-stretch rounded-xl bg-gray-100 dark:bg-gray-800 h-10 overflow-hidden">
+<div class="flex items-center justify-center pl-4 text-gray-500">
+<span class="material-symbols-outlined text-[20px]">search</span>
 </div>
-<div class="carousel-slide absolute inset-0 opacity-0 z-0">
-<img alt="Industrial manufacturing facility safety audit" class="w-full h-full object-cover" data-alt="High-tech manufacturing facility interior with safety walkways" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARBZV0iOgkWlRWU3HocPzicUbFIqYfKNR6tWyPCjsy_AkxWYF7-siqOVdhlSj5SwpTvI7WzqqB516iYfp5SrEZCmtL6VrQZ67WcvYmDd1reGSvutUS_SQ4zm7hJgXSM6ozAdfCNmLfUX_e0IxaHnJjYIkzcmhaUEDkKQpFNq2dpgalZK1ujjrBVnurGaLOM6sWEbOWWLMdzTu_mt4hxG2m0pWJ6amUZT_FeIOCH2bouKJf41UljBcoXoIVgASV-iYRQg6DHbtQnPvy"/>
+<input class="w-full border-none bg-transparent px-4 text-sm focus:ring-0 placeholder-gray-500 dark:text-white" placeholder="Search projects..." type="text"/>
 </div>
-<!-- Overlay Gradient -->
-<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent z-20 pointer-events-none"></div>
-<!-- Indicators -->
-<div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-2 z-30">
-<button aria-label="Slide 1" class="carousel-indicator w-8 h-1.5 rounded-full bg-primary shadow-sm"></button>
-<button aria-label="Slide 2" class="carousel-indicator w-3 h-1.5 rounded-full bg-white/40 hover:bg-white/60 shadow-sm"></button>
-<button aria-label="Slide 3" class="carousel-indicator w-3 h-1.5 rounded-full bg-white/40 hover:bg-white/60 shadow-sm"></button>
-<button aria-label="Slide 4" class="carousel-indicator w-3 h-1.5 rounded-full bg-white/40 hover:bg-white/60 shadow-sm"></button>
+<button class="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-xl text-sm font-bold tracking-wide transition-all shadow-lg shadow-primary/20">
+                    Consultation
+                </button>
+</div>
+</header>
+<main class="flex-1 flex flex-col items-center py-12 px-6 lg:px-40">
+<div class="w-full max-w-[1200px]">
+<!-- Page Heading -->
+<div class="flex flex-col gap-4 mb-10 text-center md:text-left">
+<h1 class="text-4xl md:text-5xl font-black leading-tight tracking-[-0.033em]">Engineering Excellence</h1>
+<p class="text-gray-500 dark:text-gray-400 text-lg max-w-2xl font-medium">A curated showcase of our most ambitious architectural and civil infrastructure projects across the globe.</p>
+</div>
+<!-- Filters / Chips -->
+<div class="flex gap-3 mb-12 flex-wrap justify-center md:justify-start">
+<div class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-primary text-white px-6 cursor-pointer shadow-md shadow-primary/20">
+<p class="text-sm font-bold">All Projects</p>
+</div>
+<div class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-50 border border-gray-100 dark:border-gray-700 px-6 cursor-pointer transition-colors">
+<p class="text-sm font-semibold">Obra Civil</p>
+</div>
+<div class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-50 border border-gray-100 dark:border-gray-700 px-6 cursor-pointer transition-colors">
+<p class="text-sm font-semibold">Infrastructure</p>
+</div>
+<div class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-50 border border-gray-100 dark:border-gray-700 px-6 cursor-pointer transition-colors">
+<p class="text-sm font-semibold">Urban Design</p>
+</div>
+<div class="flex h-10 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-gray-800 hover:bg-gray-50 border border-gray-100 dark:border-gray-700 px-6 cursor-pointer transition-colors">
+<p class="text-sm font-semibold">Industrial</p>
+</div>
+</div>
+<!-- Bento Gallery Grid -->
+<div class="grid grid-cols-1 md:grid-cols-4 auto-rows-[280px] gap-6">
+<!-- Item 1: Large Featured (2x2) -->
+<div class="gallery-item relative md:col-span-2 md:row-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
+<img class="h-full w-full object-cover" data-alt="Modern glass skyscraper architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB0sLErhEPHdCk_fIb4zvPs7LPgm5wGYMWGXAOjA7aNX0PFdDxCKL5Nk2o-8yh5eM1LhNAjVg9c6nlZUQzujcqU6XZWfxki3irx94mPgneeu7DdBX9DGPNoWYnUTJBo-wa8GO1ig0pmVtSrOKyh23DSBkGGmy54R6g5ofcFkveT3tlPY3H7wA7V-dFZQjXg_2G1STbWeh1x52KlD48SltNUdmRPRB4N6kaoDjEV19qV7Gtv-_9Ud-gXM4H6A3qYgoRh5UlPsbsUGtr"/>
+<div class="overlay absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
+<span class="text-accent-orange font-black text-sm tracking-[0.3em] mb-3">INFRASTRUCTURE</span>
+<h3 class="text-white text-2xl font-bold mb-4">Metropolitan Business Hub</h3>
+<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-primary transition-all">
+                                View Case Study
+                            </button>
+</div>
+</div>
+<!-- Item 2: Vertical Detail (1x2) -->
+<div class="gallery-item relative md:row-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
+<img class="h-full w-full object-cover" data-alt="Close up of structural engineering details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIeWcgO02ME-XjU3HpTH5j61m71oQ_h4XcY62bNxNQ7liMiizhbqFhpYrHWGie3iYlDwb_nYV8HdpIAjbEqtjsVOEyDmu3iMfMAJ5pdUafJ9sgfgrNOn3y-zOxW8j_TmGztEb8-eCpRbvrcw7Zbw8zULz24OpJA2Ih6fvGGoJu3wgfKRge_wgqrswpmlw2UmA6OwNjn1S6gaAlplbt8c1Rg0F5mkwjG4jCZLbi1Sc4gAObAbTpcDRTdk73hUM4ZKdHcALuL-Fv88Sl"/>
+<div class="overlay absolute inset-0 flex flex-col items-center justify-center p-6 text-center">
+<span class="text-accent-orange font-black text-xs tracking-[0.3em] mb-2">OBRA CIVIL</span>
+<h3 class="text-white text-lg font-bold">Suspension Systems</h3>
+</div>
+</div>
+<!-- Item 3: Standard (1x1) -->
+<div class="gallery-item relative rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
+<img class="h-full w-full object-cover" data-alt="Minimalist urban park concrete design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtZuFVwwdiY9tD3gVZDVfqK-fIWQo-IZhBmZ0phwk5TlkZi7f2gnJflWQYax43wnqIdgz3gxUpJWl-kixGT0A9lbnlOIlD1fKWBjuGiCkV-UBHyMcj1xc3yQvRzL0f-sZRVmJ4Xv2lRS7pUMPd2nc7FYmkQwwlwi7CSzAwU6SzwE_r2wfPbNDex-V9o15aU4uo-rP2aaB8ghObI-SeedIGWMThAA2f0ppiMixhRw_MmniF_eJkTgWXO_JKaUBoGAOssU7_iEVJr7dh"/>
+<div class="overlay absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
+<span class="text-accent-orange font-black text-[10px] tracking-[0.3em] mb-1">URBAN DESIGN</span>
+<h3 class="text-white text-md font-bold">Zenith Gardens</h3>
+</div>
+</div>
+<!-- Item 4: Standard (1x1) -->
+<div class="gallery-item relative rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
+<img class="h-full w-full object-cover" data-alt="Renewable energy wind farm infrastructure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5eyGM2Qr58on3E7iAU5sSG72LfpHwaawIa0vS5SOfhjWK0guljl2oaDAn7XsAJr_sY2dzXkShI5CNgrcIhf0-hBZA35f15giQmYxJVgzaymx4I2KG706m30uCoBuZt-BJEYJueeenUER9RnXmY-BmigRGYzrUKK77FQ6-X4TLJ1042S9ycNQkVrFLFcGHddATYXzDvhfGxNAcT8BAUyBMV0Es8eWZZK7UTLKSSb7WWhp3fpcsYh7zP_Tx1qognG942PxvD29x7eW6"/>
+<div class="overlay absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
+<span class="text-accent-orange font-black text-[10px] tracking-[0.3em] mb-1">RENEWABLES</span>
+<h3 class="text-white text-md font-bold">Wind Array Alpha</h3>
+</div>
+</div>
+<!-- Item 5: Wide Featured (2x1) -->
+<div class="gallery-item relative md:col-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
+<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpaPqUWa4X24KrateaYn8asiE8Do2PugVgLYmi-e--Jhwmoi-2QGMydeBjGGPhdD8j2kmLDnmHHBTDBge-0roOluC_lILh9KPMIiPeeu1LdjTFWox69xH0q7bie9nl5U2fqCXSHSf8kjoYoTZZoP_ZaPTxA3hmksunOlZbDFABUMQltEffHfwBvwRNrSrcOGdLqCRS8kQ2D5_PZwHv8P-igPziuzbfxH1Lz1sCYJhdOSYXZkkEkraHrNLsc6LDyVhxvTXx1iGQWHmb"/>
+<div class="overlay absolute inset-0 flex items-center justify-between px-10">
+<div class="flex flex-col">
+<span class="text-accent-orange font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
+<h3 class="text-white text-xl font-bold">Automation Core</h3>
+</div>
+<span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
+</div>
+</div>
+<!-- Item 6: Standard (1x1) -->
+<div class="gallery-item relative rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
+<img class="h-full w-full object-cover" data-alt="Interior of architectural library building" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGgzJWFUYelOYpn0aTX6qEFChc9Gx6DxI35X1P9ltay4Fz3vw4avFtyw_mQKmE0FEiz8Sex3v1mtBGnbx-Wg7eUk_HJDvQOQ2RexhTuF6sRsjxYRJNVmITKRZUdhhS4tERPa04rtuKvj-GgpItr6DpzjJlMo8bgtL1Gl31ItkhleXcC5_-BxtHgyG4W7CMr3pVgNpd8FQL_eB9xTM9itmxfH8J11Git-J1yqq4ulvCvBwsBRQqukStU37D47nBHHh1iBs3M4BDErCP"/>
+<div class="overlay absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
+<span class="text-accent-orange font-black text-[10px] tracking-[0.3em] mb-1">INTERIOR</span>
+<h3 class="text-white text-md font-bold">Helix Atrium</h3>
+</div>
+</div>
+<!-- Item 7: Standard (1x1) -->
+<div class="gallery-item relative rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
+<img class="h-full w-full object-cover" data-alt="Corporate office lobby design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtIdYPoWbwuhkC-VOlxbSbHGN-lgNGwOXY-Rrmja39AXhn2221UEXh7b0I3sktv83DfQq2Z3bYFvvdU7mNc_4lTOsvIbL_l87myDl1czWvuI_I7JVD_Xw1kHRChmRSKc2WDRAU4uS_B9JtAoZUwp34pjawlGEYzJ7YbVSCOUMHRcUT6AlcZ39CYxbxlNjroa4VKFiHzG39iRSWVOZpZVSKMtCmYOaxRQnjAZpi3FC0XQecoNLJ7usu8a1WSSv7AFJYHlfkxkFHa8ZA"/>
+<div class="overlay absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
+<span class="text-accent-orange font-black text-[10px] tracking-[0.3em] mb-1">CORPORATE</span>
+<h3 class="text-white text-md font-bold">Nexus Plaza</h3>
 </div>
 </div>
 </div>
-</section>
-
-
-
-
+<!-- Footer Section Header -->
+<div class="mt-20 flex items-center justify-between border-t border-gray-100 dark:border-gray-800 pt-8">
+<h2 class="text-2xl font-bold tracking-tight">Project Statistics</h2>
+<a class="text-primary font-bold text-sm flex items-center gap-2 hover:underline" href="#">
+                        Download Report <span class="material-symbols-outlined text-sm">download</span>
+</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 py-10">
+<div class="flex flex-col gap-2">
+<span class="text-4xl font-extrabold text-primary">240+</span>
+<span class="text-sm font-semibold text-gray-500 uppercase tracking-widest">Completed</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-4xl font-extrabold text-primary">12</span>
+<span class="text-sm font-semibold text-gray-500 uppercase tracking-widest">Countries</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-4xl font-extrabold text-primary">1.2B</span>
+<span class="text-sm font-semibold text-gray-500 uppercase tracking-widest">Investment</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="text-4xl font-extrabold text-primary">95%</span>
+<span class="text-sm font-semibold text-gray-500 uppercase tracking-widest">Efficiency</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Small Footer Info -->
+<footer class="bg-gray-50 dark:bg-gray-900 py-6 px-10 text-center border-t border-gray-200 dark:border-gray-800">
+<p class="text-gray-400 text-xs font-medium tracking-widest uppercase">© 2024 Bento Gallery Engineering Group. All rights reserved.</p>
+</footer>
+</div>
 </body>
-
-
 </html>

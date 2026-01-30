@@ -64,3 +64,30 @@ html {
         .animate-fadeIn {
             animation: fadeIn 0.5s ease-out forwards;
         }
+
+
+/* Galeria de cursos */
+
+.material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        /* Custom bento background color */
+        .bento-bg {
+            background-color: #f8f8fc; /* oklch(98.4% 0.003 247.858) approximate */
+        }
+        /* Hover Overlay Logic */
+        .gallery-item .overlay {
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            background: linear-gradient(0deg, rgba(26, 13, 165, 0.8) 0%, rgba(26, 13, 165, 0.4) 100%);
+        }
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+        .gallery-item img {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
