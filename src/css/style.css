@@ -68,7 +68,7 @@ html {
 
 /* Galeria de cursos */
 
-.material-symbols-outlined {
+    .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
         /* Custom bento background color */
@@ -90,4 +90,15 @@ html {
         .gallery-item:hover img {
             transform: scale(1.1);
         }
-        
+    
+
+/* Ocultar barra de scroll para la galeria Por que elegir JER */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Ocultar barra de scroll para IE, Edge y Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
