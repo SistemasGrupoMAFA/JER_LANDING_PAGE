@@ -49,37 +49,19 @@ btnCerrarModalSupervisorSeguridadIndustrial.addEventListener('click', ()=>{
 
 
 
-//Capacitate con nosotros
-const showModalCapacitate = document.getElementById('modalDetalleCapacitate');
-
-const btnCerrarModalCapacitate = document.getElementById('btnCerrarModalCapacitate');
-const btnAbrirModalCapacitate =  document.getElementById('btnShowModalCapacitate')
-
-
-// Accion opara abrir el detalle  capacitate 
-btnAbrirModalCapacitate.addEventListener('click',()=>{
-
-    showModalCapacitate.classList.remove('hidden');
-    showModalCapacitate.classList.add('flex');
-    document.body.style.overflow = 'hidden'; // Bloquea el scroll de fondo
-
-})
-
-// Accion opara cerrar el detalle capacitate 
-btnCerrarModalCapacitate.addEventListener('click', ()=>{
-
-    showModalCapacitate.classList.add('hidden');
-    document.body.style.overflow = 'auto'; // Re-habilita el scroll de la página
-
-});
 
 
 
-//Capacitate con nosotros
+
+//galeria de fotos
+
 const showModalGaleria = document.getElementById('modalDetalleGaleria');
 
 const btnCerrarModalGaleria = document.getElementById('btnCerrarModalGaleria');
-const btnAbrirModalGaleria =  document.getElementById('btnShowModalGaleria')
+const btnAbrirModalGaleria =  document.getElementById('btnShowModalGaleria');
+
+
+
 
 
 // Accion opara abrir el detalle  capacitate 
@@ -100,4 +82,3 @@ btnCerrarModalGaleria.addEventListener('click', ()=>{
 });
 
 
-btnShowModalGaleria
