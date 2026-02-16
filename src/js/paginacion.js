@@ -6,23 +6,22 @@
 const showModalCapacitate = document.getElementById('modalDetalleCapacitate');
 
 const btnCerrarModalCapacitate = document.getElementById('btnCerrarModalCapacitate');
-const btnAbrirModalCapacitate =  document.getElementById('btnShowModalCapacitate')
+const btnAbrirModalCapacitate =  document.getElementById('btnShowModalCapacitate');
 
-// Construccion  de plantilla de cursos
- const createGridCursos = document.getElementById('listado-cursos');
+const labelPagination =  document.getElementById('labelPagination');
 
+
+
+
+
+let count = 1;
 
  const nextPage = document.getElementById('siguiente');
  const lastPage = document.getElementById('atras');
 
-
-
-let countPages = [];
-
-
 let todosLosCursos = {
 
-    "listado-cursos":[{
+    "listado-cursos-1":[{
         
         "titulo":"SEGURIDAD INDUSTRIAL NIVEL SUPERIOR"
 
@@ -272,18 +271,34 @@ let todosLosCursos = {
 
 
 
+// Construccion  de plantilla de cursos
+ const createGridCursos = document.getElementById('generico');
+ 
+
+
+
+
 
 
 // Accion opara abrir el detalle  capacitate 
 btnAbrirModalCapacitate.addEventListener('click',()=>{
 
+    createGridCursos.id = 'listado-cursos-'+count
 
+    
+    
+    
+        lastPage.classList.add('hidden')
+    
+    
+
+   
     showModalCapacitate.classList.remove('hidden');
     showModalCapacitate.classList.add('flex');
     document.body.style.overflow = 'hidden'; // Bloquea el scroll de fondo
 
    
-    todosLosCursos["listado-cursos"].forEach(element => {
+    todosLosCursos["listado-cursos-"+count].forEach(element => {
 
         
             
@@ -301,9 +316,11 @@ btnAbrirModalCapacitate.addEventListener('click',()=>{
 // Accion para cerrar el detalle capacitate 
 btnCerrarModalCapacitate.addEventListener('click', ()=>{
 
+    count=1;
     showModalCapacitate.classList.add('hidden');
     document.body.style.overflow = 'auto'; // Re-habilita el scroll de la página
     createGridCursos.innerHTML='';
+   
     
 
 });
@@ -311,28 +328,75 @@ btnCerrarModalCapacitate.addEventListener('click', ()=>{
 
 
  nextPage.addEventListener('click',()=>{
-
-
-    if (createGridCursos.id == 'listado-cursos' ) {
+    
+    
+    lastPage.classList.remove('hidden')
+    createGridCursos.innerHTML='';
+    count+=1
+   
+     if (count == 5) {
         
-        alert("dsaas")
-        createGridCursos.innerHTML='';
-
-    }else{
-
-        console.log(createGridCursos.id)
+        nextPage.classList.add('hidden')
 
     }
     
+    
 
-    // createGridCursos.innerHTML='';
 
+
+    todosLosCursos["listado-cursos-"+count].forEach(element => {
+
+  
+        createGridCursos.insertAdjacentHTML('beforeend', 
+        ` <div class="flex items-center gap-3 p-3 bg-white dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+            <span class="material-symbols-outlined text-accent-orange font-bold">check_circle</span>
+            <span class="text-slate-700 dark:text-slate-200 font-medium">${element.titulo}</span>
+        </div>`);
+
+
+    });
+    
+
+   
  })
 
 
 lastPage.addEventListener('click',()=>{
+    
+    count-=1
 
-   createGridCursos.innerHTML='';
+    if (count == 1) {
+        
+        lastPage.classList.add('hidden')
+
+    }
+
+    if(count<5){
+
+        nextPage.classList.remove('hidden')
+    }
+
+    
+    createGridCursos.innerHTML='';
+   
+    
+   
+
+     todosLosCursos["listado-cursos-"+count].forEach(element => {
+
+  
+        createGridCursos.insertAdjacentHTML('beforeend', 
+        ` <div class="flex items-center gap-3 p-3 bg-white dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+            <span class="material-symbols-outlined text-accent-orange font-bold">check_circle</span>
+            <span class="text-slate-700 dark:text-slate-200 font-medium">${element.titulo}</span>
+        </div>`);
+
+
+    });
+   
+  
+
+  
 
  })
 

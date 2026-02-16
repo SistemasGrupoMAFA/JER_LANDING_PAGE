@@ -1,6 +1,6 @@
 let todosLosCursos = {
 
-    "listado-cursos":[{
+    "listado-cursos-1":[{
         
         "titulo":"SEGURIDAD INDUSTRIAL NIVEL SUPERIOR"
 
@@ -249,6 +249,24 @@ let todosLosCursos = {
 }
 
 
-todosLosCursos["listado-cursos"].forEach(e => {
-    console.log(e.titulo)
-});
+// todosLosCursos["listado-cursos"].forEach(e => {
+//     console.log(e.titulo)
+// });
+
+
+
+
+
+
+
+let u = Object.keys(todosLosCursos)
+
+let count = 1
+
+console.log('cosnd-'+count)
+
+
+
+
+
+
