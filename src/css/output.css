@@ -547,12 +547,6 @@
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
   .flex-col {
     flex-direction: column;
   }
@@ -1268,11 +1262,6 @@
       --tw-scale-y: 95%;
       --tw-scale-z: 95%;
       scale: var(--tw-scale-x) var(--tw-scale-y);
-    }
-  }
-  .sm\:grid-cols-6 {
-    @media (width >= 40rem) {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
     }
   }
   .sm\:text-5xl {
