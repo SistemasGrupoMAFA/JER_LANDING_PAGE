@@ -6,6 +6,10 @@ body { font-family: 'Public Sans', sans-serif; }
 /* Animation to scroll until contact form */
 html {
   scroll-behavior: smooth;
+
+  /* Ajusta los 80px según la altura de tu menú */
+  scroll-padding-top: 80px; 
+  scroll-behavior: smooth;
 }
 
 
@@ -82,7 +86,7 @@ html {
         .gallery-item .overlay {
             opacity: 0;
             transition: opacity 0.4s ease;
-            background: linear-gradient(0deg, rgba(26, 13, 165, 0.8) 0%, rgba(26, 13, 165, 0.4) 100%);
+            background: linear-gradient(0deg, oklch(65% 0.25 45 / 0.8) 0%, oklch(65% 0.25 45 / 0.4) 100%);
         }
         .gallery-item:hover .overlay {
             opacity: 1;
