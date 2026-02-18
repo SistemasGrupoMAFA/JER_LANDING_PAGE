@@ -43,7 +43,7 @@
     <a href="">
 
         <img id="containerLogo"
-            src="/src/img/logo_jer_vector.svg" 
+            src="./src/img/logo_jer_vector.svg" 
             alt="JER SAFETY LOGO" 
             
           >
@@ -51,13 +51,13 @@
     </a>
       </div>
 <div class="hidden md:flex flex-1 justify-end gap-8 items-center text-background-light">
-<div class="text-primary flex items-center gap-9">
-<a class="text-primary text-md font-semibold hover:text-accent-orange transition-colors " href="#inicioAnchor">INICIO</a>
+<div class="text-gray-500 flex items-center gap-9">
+<a class="text-md font-semibold hover:text-accent-orange transition-colors " href="#inicioAnchor">INICIO</a>
 <a class="text-md font-semibold hover:text-accent-orange transition-colors " href="#nuestrasFortalezas">NOSOTROS</a>
 
  <!-- Dropdown to the Right -->
         <div class="relative font-semibold inline-block text-left mr-2">
-            <button class="px-4 py-2 text-primary text-md hover:text-accent-orange hover:cursor-pointer"
+            <button class="px-4 py-2 text-gray-500 text-md hover:text-accent-orange hover:cursor-pointer"
                     onclick="toggleDropdown('dropdownMenuRight')">
                SERVICIOS
             </button>
@@ -67,12 +67,12 @@
                         animate-fadeIn tracking-tight"
                  id="dropdownMenuRight">
                 <a href="#nuestrosServiciosAnchor" class="block px-4 py-2 text-md
-                                   text-gray-700 
+                                   text-gray-500 
                                    hover:text-accent-orange">
                   SERVICIOS DE SUPERVISIÓN
                   </a>
-                <a href="#" class="block px-4 py-2 text-md
-                                   text-gray-700 
+                <a id="showModalLink" class="block px-4 py-2 text-md
+                                   text-gray-500 
                                    hover:text-accent-orange">
                   CAPACITACIONES
                   </a>
@@ -80,7 +80,7 @@
         </div>
 
 </div>
-<a class="text-md font-semibold text-primary hover:text-accent-orange transition-colors " href="#seeDirectionOnFooter">CONTACTO</a>
+<a class="text-md font-semibold text-gray-500 hover:text-accent-orange transition-colors " href="#seeDirectionOnFooter">CONTACTO</a>
 
 
 
@@ -153,7 +153,7 @@
 <div class="inline-flex items-center px-3 py-1 rounded-full bg-accent-orange  text-xs font-bold uppercase tracking-wider">
                           
 </div>
-<p class="text-background-dark text-lg font-normal leading-relaxed">
+<p class="text-background-dark text-xl font-bold leading-relaxed">
                             Somos una empresa especializada en la supervisión de Seguridad e Higiene Industrial, comprometida con los más altos estándares de calidad para proteger a las personas y fortalecer la operación de nuestros clientes.
                         </p>
 <div class="flex flex-col gap-4">
@@ -162,8 +162,8 @@
 <span class="material-symbols-outlined">shield_with_heart</span>
 </div>
 <div>
-<h3 class="font-bold text-lg text-white">Soluciones a medida</h3>
-<p class="text-sm text-slate-500  leading-relaxed">En JER Safety ofrecemos una atención cercana y personalizada, así como soluciones integrales que se adaptan a las necesidades de cada proyecto, previenen riesgos y aseguran el cumplimiento del marco legal vigente establecido por la STPS.
+<h3 class="font-bold text-xl text-white">Soluciones a medida</h3>
+<p class="text-lg text-white leading-relaxed">En JER Safety ofrecemos una atención cercana y personalizada, así como soluciones integrales que se adaptan a las necesidades de cada proyecto, previenen riesgos y aseguran el cumplimiento del marco legal vigente establecido por la STPS.
 </p>
 </div>
 
@@ -173,8 +173,8 @@
 <span class="material-symbols-outlined">verified_user</span>
 </div>
 <div>
-<h3 class="font-bold text-lg text-white">Seguridad Integral</h3>
-<p class="text-sm  text-slate-500 leading-relaxed">Trabajamos como aliados estratégicos, brindando confianza, respaldo técnico y experiencia para garantizar entornos laborales seguros, porque para nosotros lo más importante es la vida y el bienestar de las personas.</p>
+<h3 class="font-bold text-xl text-white">Seguridad Integral</h3>
+<p class="text-lg  text-white leading-relaxed">Trabajamos como aliados estratégicos, brindando confianza, respaldo técnico y experiencia para garantizar entornos laborales seguros, porque para nosotros lo más importante es la vida y el bienestar de las personas.</p>
 </div>
 
 </div>
@@ -248,9 +248,6 @@
 </div>
 </div>
 
-
-
-
 </div>
 </section>
 
@@ -263,12 +260,12 @@
 <div class="grid grid-cols-1    lg:grid-cols-3 gap-6">
 
 <!-- Service 1 -->
-<div class="bg-primary p-6 rounded-2xl  hover:scale-105 hover:transition duration-700 ease-in-out group">
+<div class="bg-primary p-6 rounded-2xl  hover:cursor-pointer hover:scale-105 hover:transition duration-700 ease-in-out group">
 <div class="w-14 h-14 bg-accent-orange text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20 group-hover:bg-white ">
 <span class="group-hover:text-accent-orange material-symbols-outlined text-3xl">garden_cart</span>
 </div>
-<h4 class="text-xl font-bold mb-3 text-white">Supervisor de seguridad en obra civil</h4>
-<p class="text-slate-500 text-sm leading-relaxed mb-6">
+<h4 class="text-xl font-extrabold mb-3 text-white">Supervisor de seguridad en obra civil</h4>
+<p class="text-white text-md leading-relaxed mb-6">
                             Supervisión permanente en obra para garantizar seguridad, prevenir accidentes y asegurar el cumplimiento normativo.
                         </p>
 <a id="btnShowModalSupervisorSeguridadObraCivil" class="text-accent-orange font-bold text-sm flex items-center gap-2 hover:gap-3 hover:cursor-pointer transition-all">
@@ -277,12 +274,12 @@
 </div>
 
 <!-- Service 2 -->
-<div class="bg-primary p-6 rounded-2xl  hover:scale-105 hover:transition duration-700 ease-in-out group">
+<div class="bg-primary p-6 rounded-2xl  hover:scale-105 hover:cursor-pointer hover:transition duration-700 ease-in-out group">
 <div class="w-14 h-14 bg-accent-orange text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20 group-hover:bg-white">
 <span class="group-hover:text-accent-orange material-symbols-outlined text-3xl">factory</span>
 </div>
-<h4 class="text-xl font-bold mb-3 text-white">Supervisor de seguridad industrial </h4>
-<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6">
+<h4 class="text-xl font-extrabold mb-3 text-white">Supervisor de seguridad industrial </h4>
+<p class="text-white text-md leading-relaxed mb-6">
                             Supervisión de seguridad industrial para prevenir riesgos, proteger al personal e instalaciones y asegurar cumplimiento normativo.
 
                         </p>
@@ -292,12 +289,12 @@
 </div>
 
 <!-- Service 3 -->
-<div class="bg-primary p-6 rounded-2xl  hover:scale-105 hover:transition duration-700 ease-in-out group">
+<div class="bg-primary p-6 rounded-2xl  hover:scale-105 hover:cursor-pointer hover:transition duration-700 ease-in-out group">
 <div class="w-14 h-14 bg-accent-orange text-white rounded-xl flex items-center justify-center mb-6 shadow-lg shadow-primary/20 group-hover:bg-white">
 <span class="group-hover:text-accent-orange material-symbols-outlined text-3xl">badge</span>
 </div>
-<h4 class="text-xl font-bold mb-3 text-white">Capacítate con nosotros y obtén tu DC3</h4>
-<p class="text-slate-500  text-sm leading-relaxed mb-6">
+<h4 class="text-xl font-extrabold mb-3 text-white">Capacítate con nosotros y obtén tu DC3</h4>
+<p class="text-white  text-md leading-relaxed mb-6">
                             Cursos de seguridad e higiene para prevenir riesgos y asegurar cumplimiento normativo.
 
                         </p>
@@ -309,73 +306,22 @@
 </div>
 </section>
 
-<!-- Why Choose Us Section -->
-<!-- <section class="px-4 md:px-10 lg:px-20 py-20 bg-background-light  overflow-hidden relative ">
-<div class="flex flex-col lg:flex-row items-center gap-16">
-<div class="w-full lg:w-1/2 relative">
-<div class="grid grid-cols-2 gap-4">
-<img class="rounded-xl shadow-lg w-full h-48 object-cover" data-alt="Factory worker operating industrial machinery safely" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB83bD3ppWcu9JeWEv-ji3dH5naT0qpEHvJC0JlH6cL-GZU75IpjYYrT313y8c1NU6VseT95sMv8aopxOaZ1XtCVw5dcDo1Q-6ap7jr-yRrXKowbhl9ocGS7RpD387ckJazTB4ve7gVYrnshy8_T6I_OwUhp7jJRB0fyWdqPUBRaHIjLfLJorUF133uS-9oM8YdYAC1Z8uvxTPuKgStgO33-jVU0BVpKCqfvY_kcAyGvsJOPLb9nyAxTKgQ5c1VFkD8QMIhlffUFmGK"/>
-<img class="rounded-xl shadow-lg w-full h-48 object-cover mt-8" data-alt="Two engineers discussing technical plans on site" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5FcUP_vf7viBF2hBlbjtXki5jJ3gL1DmmYOKNUvIYHYsBHpCOWd4zFSiSBnJzlazn9DAUXQVDS1f_IJfUNVcAqjYYDD368lSlhdYq7PL_WPzzQ4gDGSUF_zQin4cY4Gy7ea9p8IO5BBK2VUODPpTuZyFcsOkztGqPoZsHzvB0rW2nxtEbMKE5f8nhXruUz0EkDZ1FutfVAd-4Z-WEc0JT561kONiawiJpi58zijHmBy9LJnyM24AGgLusuqq22_ve5hgF0BX7M93_"/>
-</div>
-<div id="btnShowModalGaleria" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-white p-8 rounded-2xl shadow-2xl flex flex-col items-center cursor-pointer hover:scale-105 hover:transition duration-700 ease-in-out">
-<span class="text-4xl font-black">Visitar</span>
-<span class="text-xs uppercase font-bold tracking-widest text-white/80">Galeria</span>
-</div>
-</div>
-<div class="w-full flex flex-col gap-8">
 
-<h2 class="text-3xl md:text-5xl font-black text-accent-orange">¿Por qué elegir a JER SAFETY?
-</h2>
-<p class="flex font-semibold text-2xl">
-    Nuestra experiencia en supervisión, junto con un equipo de profesionales altamente calificados, nos permite ofrecer servicios confiables, eficientes y alineados a las necesidades de su operación. 
-</p>
-<ul class="flex flex-col gap-6">
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-accent-orange font-bold">check_circle</span>
-<div class="flex flex-row gap-3">
-
-<h5 class="font-bold text-md sm:text-sm">Disponibilidad total, atención inmediata. </h5>
-<p class="text-slate-500 text-md sm:text-sm">Ofrecemos servicios de supervisión los 365 días del año, con cobertura nacional y capacidad de respuesta inmediata.
- 
-</p>
-</div>
-</li>
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-accent-orange  font-bold">check_circle</span>
-<div class="flex flex-row gap-3">
-<h5 class="font-bold text-2xl sm:text-md">Servicio a la medida. </h5>
-<p class="text-slate-500 text-2xl ">Diseñamos cotizaciones y planes a la medida de cada proyecto, para que pagues solo por lo que realmente necesita.
-</p>
-</div>
-</li>
-<li class="flex gap-4">
-<span class="material-symbols-outlined text-accent-orange  font-bold">check_circle</span>
-<div class="flex flex-row gap-3">
-<h5 class="font-bold text-3xl sm:text-md">Calidad operativa.</h5>
-<p class="text-slate-500 text-3xl sm:text-md">
-    Experiencia en supervision y personal calificando para servicios confiables y eficientes.
-</p>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</section> -->
 <section class="px-4 md:px-10 lg:px-20 py-20 bg-background-light overflow-hidden relative">
   <div class="flex flex-col lg:flex-row items-center gap-16">
-    <div class="w-full lg:w-1/2 relative">
-      <div class="grid grid-cols-2 gap-4">
+    <div class="w-full lg:w-1/2 relative gap-36">
+      <div class="grid grid-cols-2">
         <img class="rounded-xl shadow-lg w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB83bD3ppWcu9JeWEv-ji3dH5naT0qpEHvJC0JlH6cL-GZU75IpjYYrT313y8c1NU6VseT95sMv8aopxOaZ1XtCVw5dcDo1Q-6ap7jr-yRrXKowbhl9ocGS7RpD387ckJazTB4ve7gVYrnshy8_T6I_OwUhp7jJRB0fyWdqPUBRaHIjLfLJorUF133uS-9oM8YdYAC1Z8uvxTPuKgStgO33-jVU0BVpKCqfvY_kcAyGvsJOPLb9nyAxTKgQ5c1VFkD8QMIhlffUFmGK" alt="Factory worker operating industrial machinery safely"/>
         <img class="rounded-xl shadow-lg w-full h-48 object-cover mt-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5FcUP_vf7viBF2hBlbjtXki5jJ3gL1DmmYOKNUvIYHYsBHpCOWd4zFSiSBnJzlazn9DAUXQVDS1f_IJfUNVcAqjYYDD368lSlhdYq7PL_WPzzQ4gDGSUF_zQin4cY4Gy7ea9p8IO5BBK2VUODPpTuZyFcsOkztGqPoZsHzvB0rW2nxtEbMKE5f8nhXruUz0EkDZ1FutfVAd-4Z-WEc0JT561kONiawiJpi58zijHmBy9LJnyM24AGgLusuqq22_ve5hgF0BX7M93_" alt="Two engineers discussing technical plans on site"/>
       </div>
-      <div id="btnShowModalGaleria" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-white p-8 rounded-2xl shadow-2xl flex flex-col items-center cursor-pointer hover:scale-105 transition duration-700 ease-in-out">
+      <button id="btnShowModalGaleria" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-white p-8 rounded-2xl shadow-2xl flex flex-col items-center cursor-pointer hover:scale-105 transition duration-700 ease-in-out">
         <span class="text-4xl font-black">Visitar</span>
         <span class="text-xs uppercase font-bold tracking-widest text-white/80">Galeria</span>
-      </div>
+      </button>
     </div>
 
-    <div class="w-full flex flex-col gap-8">
-      <h2 class="text-3xl md:text-5xl font-black text-accent-orange">¿Por qué elegir a JER SAFETY?</h2>
+    <div class="w-full flex flex-col gap-16">
+      <div class="text-3xl md:text-5xl font-black text-accent-orange">¿Por qué elegir a JER SAFETY?</div>
       
       <p class="font-semibold text-xl text-gray-700">
         Nuestra experiencia en supervisión, junto con un equipo de profesionales altamente calificados, nos permite ofrecer servicios confiables, eficientes y alineados a las necesidades de su operación.
@@ -418,26 +364,27 @@
 </h3>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-background-light">
-<div class=" flex flex-col items-center text-center gap-15 p-15 bg-primary rounded-2xl   hover:scale-105 hover:transition duration-700 ease-in-out group">
+<div class=" flex flex-col items-center text-center gap-15 p-15 bg-primary  rounded-2xl hover:cursor-pointer   hover:scale-105 hover:transition duration-700 ease-in-out group">
 <span class="material-symbols-outlined text-5xl  text-accent-orange scale-[3]  group-hover:scale-[4] transition-transform">security</span>
 <span class="font-bold text-xl text-white">PREVENIR ACCIDENTES</span>
 </div>
-<div class="flex flex-col items-center text-center gap-15 p-15 bg-primary rounded-2xl    hover:scale-105 hover:transition duration-700 ease-in-out group">
+<div class="flex flex-col items-center text-center gap-15 p-15  bg-primary rounded-2xl  hove
+
+r:cursor-pointer  hover:scale-105 hover:transition duration-700 ease-in-out group">
 <span class="material-symbols-outlined text-5xl text-accent-orange scale-[3]  group-hover:scale-[4] transition-transform">family_restroom</span>
 <span class="font-bold text-xl text-white">CUIDAR LA SALUD DE LOS TRABAJADORES</span>
 </div>
-<div class="flex flex-col items-center  gap-15 p-15 bg-primary rounded-2xl  hover:scale-105 hover:transition duration-700 ease-in-out group">
+<div class="flex flex-col items-center  gap-15 p-15  bg-primary shadow-md  rounded-2xl hover:cursor-pointer hover:scale-105 hover:transition duration-700 ease-in-out group">
 <span class="material-symbols-outlined text-5xl text-accent-orange scale-[3]  group-hover:scale-[4] transition-transform">globe</span>
 <p class="font-bold text-xl text-center text-white">PROTEGER EL ENTORNO</p>
 </div>
-<div class="flex flex-col items-center text-center gap-15 p-15 bg-primary rounded-2xl  hover:scale-105 hover:transition duration-700 ease-in-out group">
+<div class="flex flex-col items-center text-center gap-15 p-15  bg-primary shadow-md  rounded-2xl hover:cursor-pointer hover:scale-105 hover:transition duration-700 ease-in-out group">
 <span class="material-symbols-outlined text-5xl text-accent-orange scale-[3]  group-hover:scale-[4] transition-transform">finance_mode</span>
 <p class="font-bold text-xl text-center text-white">AYUDAR A NUESTROS CLIENTES A AVANZAR EN SUS METAS</p>
 
-</div>
+</div> 
 </div>
 </section>
-
 
 
 <!-- NUESTRO COMPROMISO -->
@@ -448,20 +395,20 @@
 </h3>
 </div>
 <div class="grid grid-cols-2 md:grid-cols-3 gap-4 text-background-light">
-<div class=" flex flex-col items-center gap-10 p-8 bg-primary rounded-2xl  hover:scale-105 hover:transition duration-700 ease-in-out group">
+<div class=" flex flex-col items-center gap-10 p-8 bg-primary rounded-2xl hover:cursor-pointer hover:scale-105 hover:transition duration-700 ease-in-out group">
 <span class="material-symbols-outlined  text-accent-orange scale-[3]  group-hover:scale-[4] transition-transform">award_star</span>
 <span class="font-bold  text-white text-xl">EXCELENCIA</span>
-<p class="text-center text-xl text-slate-500 ">Actuamos con profesionalismo, cuidando cada detalle para garantizar la máxima calidad en nuestro trabajo</p>
+<p class="text-center text-xl text-white ">Actuamos con profesionalismo, cuidando cada detalle para garantizar la máxima calidad en nuestro trabajo</p>
 </div>
-<div class="flex flex-col items-center gap-10 p-8 bg-primary rounded-2xl   hover:scale-105 hover:transition duration-700 ease-in-out group">
+<div class="flex flex-col items-center gap-10 p-8 bg-primary rounded-2xl hover:cursor-pointer  hover:scale-105 hover:transition duration-700 ease-in-out group">
 <span class="material-symbols-outlined text-5xl text-accent-orange  scale-[3]  group-hover:scale-[4] transition-transform">verified_user</span>
 <span class="font-bold text-xl text-white">RESPONSABILIDAD</span>
-<p class="text-center text-xl text-slate-500 ">Protegemos la seguridad, la salud y el medio ambiente como compromiso fundamental de nuestro trabajo.</p>
+<p class="text-center text-xl text-white ">Protegemos la seguridad, la salud y el medio ambiente como compromiso fundamental de nuestro trabajo.</p>
 </div>
-<div class="flex flex-col items-center gap-10 p-8 bg-primary rounded-2xl  hover:scale-105 hover:transition duration-700 ease-in-out group">
+<div class="flex flex-col  items-center gap-10 p-8 bg-primary  rounded-2xl hover:cursor-pointer hover:scale-105 hover:transition duration-700 ease-in-out group">
 <span class="material-symbols-outlined text-5xl text-accent-orange scale-[3]  group-hover:scale-[4] transition-transform">support_agent</span>
 <span class="font-bold text-white text-xl">SERVICIO</span>
-<p class="text-center text-xl text-slate-500 ">Servimos con respeto y vocación, priorizando siempre a las personas.</p>
+<p class="text-center text-xl text-white ">Servimos con respeto y vocación, priorizando siempre a las personas.</p>
 </div>
 </div>
 </section>
@@ -544,17 +491,15 @@
 </footer>
 
 
-
-
 <!-- Modal que muestra el detalle de los servicios Supervisor de seguridad en obra civil -->
 
 <!-- Modal Backdrop Blur -->
 <div id ="modalDetalleSupervisorSeguridadObraCivil" class="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-md bg-black/60 hidden  ">
 <!-- Modal Container -->
-<div class="relative  bg-primary rounded-3xl  shadow-2xl overflow-hidden">
+<div class="relative h-full bg-primary rounded-3xl  shadow-2xl overflow-hidden">
 <!-- Close Button (Top Right) -->
-<button id="btnCerrarSupervisorSeguridadObraCivil" class="absolute top-6 right-6 p-2 rounded-full hover:bg-slate-100 transition-colors text-slate-400">
-<span  class="material-symbols-outlined text-2xl">close</span>
+<button id="btnCerrarSupervisorSeguridadObraCivil" class="absolute top-6 right-6 p-2 rounded-full hover:cursor-pointer  transition-colors text-slate-400">
+<span  class="material-symbols-outlined hover:text-white text-2xl">close</span>
 </button>
 <div class="p-8 md:p-12">
 <!-- Header Section -->
@@ -570,10 +515,7 @@
 <!-- Description Area -->
 <div class="mb-8">
 <p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
-    El servicio de supervisión de seguridad en obra civil asegura el cumplimiento de las normas de seguridad e higiene en campo, r
-    educiendo riesgos y previniendo accidentes. Nuestro supervisor mantiene presencia permanente en obra, 
-    verifica el uso correcto del EPP y la aplicación de procedimientos de trabajo seguro, 
-    contribuyendo a la continuidad del proyecto y al cumplimiento normativo.
+    El servicio de supervisión de seguridad en obra civil garantiza que las actividades en la obra se realicen bajo condiciones seguras y en cumplimiento normativo. Nuestros supervisores previenen riesgos, protegen al personal y aseguran la continuidad y correcto desarrollo del proyecto.
                     </p>
 </div>
 <!-- Features List -->
@@ -594,11 +536,15 @@
 </div>
 <div class="flex items-center gap-3 p-3 bg-white dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
 <span class="material-symbols-outlined text-accent-orange font-bold">check_circle</span>
-<span class="text-slate-700 dark:text-slate-200 font-medium">Asegurar la aplicación de procedimientos de trabajo seguro</span>
+<span class="text-slate-700 dark:text-slate-200 font-medium">Elaboración de análisis de riesgo</span>
 </div>
 <div class="flex items-center gap-3 p-3 bg-white  dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
 <span class="material-symbols-outlined text-accent-orange font-bold">check_circle</span>
 <span class="text-slate-700 dark:text-slate-200 font-medium">Elaborar reportes de seguridad, incidencias y acciones correctivas</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-white  dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+<span class="material-symbols-outlined text-accent-orange font-bold">check_circle</span>
+<span class="text-slate-700 dark:text-slate-200 font-medium">Liberación de permisos de trabajo</span>
 </div>
 </div>
 </div>
@@ -612,10 +558,10 @@
 <!-- Modal Backdrop Blur -->
 <div id ="modalDetalleSupervisorSeguridadIndustrial" class="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-md bg-black/60 hidden">
 <!-- Modal Container -->
-<div class="relative bg-primary rounded-3xl  overflow-hidden">
+<div class="relative h-full bg-primary rounded-3xl  overflow-hidden">
 <!-- Close Button (Top Right) -->
-<button id="btnCerrarSupervisorSeguridadIndustrial" class="absolute top-6 right-6 p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-400">
-<span  class="material-symbols-outlined text-2xl">close</span>
+<button id="btnCerrarSupervisorSeguridadIndustrial" class="absolute top-6 right-6 p-2 rounded-full hover:cursor-pointer transition-colors text-slate-400">
+<span  class="material-symbols-outlined hover:text-white text-2xl">close</span>
 </button>
 <div class="p-8 md:p-12">
 <!-- Header Section -->
@@ -677,13 +623,18 @@
 <!-- Modal Container -->
 <div class="relative bg-primary rounded-3xl  overflow-hidden w-full h-full">
 <!-- Close Button (Top Right) -->
-<button id="btnCerrarModalCapacitate"  class="absolute top-6 right-6 p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-400">
-<span  class="material-symbols-outlined text-2xl hover:cursor-pointer">close</span>
+<button id="btnCerrarModalCapacitate"  class="absolute top-6 right-6 p-2 rounded-full  transition-colors text-slate-400">
+<span  class="material-symbols-outlined text-2xl hover:text-white hover:cursor-pointer">close</span>
 </button>
 <div class="p-8 md:p-12">
 <!-- Header Section -->
 
 <div class="mb-10">
+
+<div class="w-16 h-16 mb-2 rounded-full  bg-accent-orange flex items-center justify-center text-white shadow-lg shadow-accent-orange/20">
+<span class="material-symbols-outlined text-4xl">info</span>
+</div>
+
 <h2 class="text-primary dark:text-white text-3xl md:text-4xl font-bold tracking-tight">Nuestros cursos</h2>
 <div class="h-1 w-20 bg-accent-orange mt-2 rounded-full"></div>
 </div>
@@ -717,16 +668,19 @@
 </div>
 </div>
 
+</div>
+
+
 
 <!-- Modal que muestra galeria de fotos->
 
 <!- Modal Backdrop Blur -->
 <div id ="modalDetalleGaleria" class="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-md bg-black/60 hidden">
 <!-- Modal Container -->
-<div class="relative w-full max-w-4xl bg-[#fcfcfd] dark:bg-background-dark rounded-3xl border border-accent-orange/20 shadow-2xl overflow-y-auto max-h-[90vh] no-scrollbar">
+<div class="relative w-full  bg-primary rounded-3xl border border-accent-orange/20 shadow-2xl overflow-y-auto max-h-[90vh] no-scrollbar">
 <!-- Close Button (Top Right) -->
-<button id="btnCerrarModalGaleria"  class="absolute top-0 right-5 p-2 rounded-full  hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-400">
-<span  class="material-symbols-outlined text-4xl">close</span>
+<button id="btnCerrarModalGaleria"  class="absolute top-0 right-5 p-3 rounded-full  transition-colors text-slate-400 hover:cursor-pointer">
+<span  class="material-symbols-outlined hover:text-white text-4xl">close</span>
 </button>
 <div class="p-8 md:p-12 ">
 <!-- Header Section -->
@@ -737,7 +691,7 @@
 <img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/extintor.png"/>
 <div class="overlay absolute inset-0 flex items-center justify-between px-10">
 <div class="flex flex-col">
-<span class="text-accent-orange font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
+<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
 <h3 class="text-white text-xl font-bold">Automation Core</h3>
 </div>
 <span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
@@ -748,7 +702,7 @@
 <img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/CPR.png"/>
 <div class="overlay absolute inset-0 flex items-center justify-between px-10">
 <div class="flex flex-col">
-<span class="text-accent-orange font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
+<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
 <h3 class="text-white text-xl font-bold">Automation Core</h3>
 </div>
 <span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
@@ -759,7 +713,7 @@
 <img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/SEGURINES1.png"/>
 <div class="overlay absolute inset-0 flex items-center justify-between px-10">
 <div class="flex flex-col">
-<span class="text-accent-orange font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
+<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
 <h3 class="text-white text-xl font-bold">Automation Core</h3>
 </div>
 <span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
@@ -770,7 +724,7 @@
 <img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/SEGURINES1.png"/>
 <div class="overlay absolute inset-0 flex items-center justify-between px-10">
 <div class="flex flex-col">
-<span class="text-accent-orange font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
+<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
 <h3 class="text-white text-xl font-bold">Automation Core</h3>
 </div>
 <span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
@@ -781,7 +735,7 @@
 <img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/TRABAJO_EN_ALTURAS.png"/>
 <div class="overlay absolute inset-0 flex items-center justify-between px-10">
 <div class="flex flex-col">
-<span class="text-accent-orange font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
+<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
 <h3 class="text-white text-xl font-bold">Automation Core</h3>
 </div>
 <span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
@@ -792,7 +746,7 @@
 <img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/colado_sedis.png"/>
 <div class="overlay absolute inset-0 flex items-center justify-between px-10">
 <div class="flex flex-col">
-<span class="text-accent-orange font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
+<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
 <h3 class="text-white text-xl font-bold">Automation Core</h3>
 </div>
 <span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
@@ -803,7 +757,7 @@
 <img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/grupo_3_bosque.png"/>
 <div class="overlay absolute inset-0 flex items-center justify-between px-10">
 <div class="flex flex-col">
-<span class="text-accent-orange font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
+<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
 <h3 class="text-white text-xl font-bold">Automation Core</h3>
 </div>
 <span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
@@ -815,7 +769,7 @@
 <img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/SEGURINES1.png"/>
 <div class="overlay absolute inset-0 flex items-center justify-between px-10">
 <div class="flex flex-col">
-<span class="text-accent-orange font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
+<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
 <h3 class="text-white text-xl font-bold">Automation Core</h3>
 </div>
 <span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
@@ -827,19 +781,6 @@
 </div>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
     <script src="./src/js/carrusel.js"></script>
     <script src="./src/js/paginacion.js"></script>
     <script src="./src/js/dark_light_mode.js"></script>

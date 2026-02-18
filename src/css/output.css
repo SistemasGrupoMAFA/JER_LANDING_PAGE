@@ -49,6 +49,8 @@
     --text-4xl--line-height: calc(2.5 / 2.25);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
     --font-weight-normal: 400;
@@ -520,9 +522,12 @@
   }
   .scale-\[3\] {
     scale: 3;
+<<<<<<< HEAD
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+=======
+>>>>>>> feature/sections
   }
   .cursor-pointer {
     cursor: pointer;
@@ -544,9 +549,6 @@
   }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-row {
-    flex-direction: row;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -598,6 +600,9 @@
   }
   .gap-16 {
     gap: calc(var(--spacing) * 16);
+  }
+  .gap-36 {
+    gap: calc(var(--spacing) * 36);
   }
   .gap-x-2 {
     column-gap: calc(var(--spacing) * 2);
@@ -652,9 +657,6 @@
   .border-\[\#dbdee6\] {
     border-color: #dbdee6;
   }
-  .border-accent-orange {
-    border-color: var(--color-accent-orange);
-  }
   .border-accent-orange\/20 {
     border-color: color-mix(in srgb, oklch(85.9% 0.240 50.08) 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -678,9 +680,6 @@
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
     }
-  }
-  .bg-\[\#fcfcfd\] {
-    background-color: #fcfcfd;
   }
   .bg-accent-orange {
     background-color: var(--color-accent-orange);
@@ -743,10 +742,13 @@
     --tw-gradient-position: to top in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+<<<<<<< HEAD
   .from-black {
     --tw-gradient-from: var(--color-black);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+=======
+>>>>>>> feature/sections
   .from-black\/50 {
     --tw-gradient-from: color-mix(in srgb, #000 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -811,9 +813,12 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
+<<<<<<< HEAD
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
   }
+=======
+>>>>>>> feature/sections
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
@@ -1024,9 +1029,12 @@
   .uppercase {
     text-transform: uppercase;
   }
+<<<<<<< HEAD
   .underline {
     text-decoration-line: underline;
   }
+=======
+>>>>>>> feature/sections
   .placeholder-gray-500 {
     &::placeholder {
       color: var(--color-gray-500);
@@ -1057,12 +1065,15 @@
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
+<<<<<<< HEAD
   .shadow-accent-orange {
     --tw-shadow-color: oklch(85.9% 0.240 50.08);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, var(--color-accent-orange) var(--tw-shadow-alpha), transparent);
     }
   }
+=======
+>>>>>>> feature/sections
   .shadow-accent-orange\/20 {
     --tw-shadow-color: color-mix(in srgb, oklch(85.9% 0.240 50.08) 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1081,10 +1092,13 @@
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-primary) 20%, transparent) var(--tw-shadow-alpha), transparent);
     }
   }
+<<<<<<< HEAD
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+=======
+>>>>>>> feature/sections
   .blur-3xl {
     --tw-blur: blur(var(--blur-3xl));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -1199,13 +1213,6 @@
       }
     }
   }
-  .hover\:bg-slate-100 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-slate-100);
-      }
-    }
-  }
   .hover\:bg-white {
     &:hover {
       @media (hover: hover) {
@@ -1244,6 +1251,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-primary);
+      }
+    }
+  }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
       }
     }
   }
@@ -1291,12 +1305,6 @@
     @media (width >= 40rem) {
       font-size: var(--text-5xl);
       line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
-  }
-  .sm\:text-sm {
-    @media (width >= 40rem) {
-      font-size: var(--text-sm);
-      line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
   .md\:col-span-2 {
@@ -1524,15 +1532,6 @@
       }
     }
   }
-  .dark\:hover\:bg-slate-800 {
-    @media (prefers-color-scheme: dark) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-slate-800);
-        }
-      }
-    }
-  }
 }
 @layer base {
   input:where([type='text']),input:where(:not([type])),input:where([type='email']),input:where([type='url']),input:where([type='password']),input:where([type='number']),input:where([type='date']),input:where([type='datetime-local']),input:where([type='month']),input:where([type='search']),input:where([type='tel']),input:where([type='time']),input:where([type='week']),select:where([multiple]),textarea,select {
@@ -1697,26 +1696,6 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
-}
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
 }
 @property --tw-border-style {
   syntax: "*";
@@ -1965,11 +1944,6 @@
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-border-style: solid;
       --tw-gradient-position: initial;
       --tw-gradient-from: #0000;

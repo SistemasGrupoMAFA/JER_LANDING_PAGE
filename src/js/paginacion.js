@@ -5,10 +5,13 @@
  //Capacitate con nosotros
 const showModalCapacitate = document.getElementById('modalDetalleCapacitate');
 
-const btnCerrarModalCapacitate = document.getElementById('btnCerrarModalCapacitate');
-const btnAbrirModalCapacitate =  document.getElementById('btnShowModalCapacitate');
 
-const labelPagination =  document.getElementById('labelPagination');
+const btnCerrarModalCapacitate = document.getElementById('btnCerrarModalCapacitate').addEventListener('click',cerrarModal);
+const btnAbrirModalCapacitate =  document.getElementById('btnShowModalCapacitate').addEventListener('click',abrirModal);
+
+
+// Construccion  de plantilla de cursos
+ const createGridCursos = document.getElementById('generico');
 
 
 
@@ -16,8 +19,17 @@ const labelPagination =  document.getElementById('labelPagination');
 
 let count = 1;
 
- const nextPage = document.getElementById('siguiente');
- const lastPage = document.getElementById('atras');
+const showModalLink = document.getElementById('showModalLink')
+showModalLink.addEventListener('click',abrirModal);
+
+
+ const nextPage = document.getElementById('siguiente')
+ nextPage.addEventListener('click',siguientePagina);
+
+
+ const lastPage = document.getElementById('atras')
+ lastPage.addEventListener('click',anteriorPagina);
+
 
 let todosLosCursos = {
 
@@ -270,20 +282,12 @@ let todosLosCursos = {
 }
 
 
-
-// Construccion  de plantilla de cursos
- const createGridCursos = document.getElementById('generico');
  
 
-
-
-
-
-
 // Accion opara abrir el detalle  capacitate 
-btnAbrirModalCapacitate.addEventListener('click',()=>{
-
-    createGridCursos.id = 'listado-cursos-'+count
+function abrirModal() {
+    
+      createGridCursos.id = 'listado-cursos-'+count
 
     
     
@@ -311,25 +315,21 @@ btnAbrirModalCapacitate.addEventListener('click',()=>{
 
     });
 
-})
 
-// Accion para cerrar el detalle capacitate 
-btnCerrarModalCapacitate.addEventListener('click', ()=>{
+}
 
-    count=1;
+function cerrarModal(){
+
+ count=1;
     showModalCapacitate.classList.add('hidden');
     document.body.style.overflow = 'auto'; // Re-habilita el scroll de la página
     createGridCursos.innerHTML='';
-   
+
+}
+
+function siguientePagina() {
     
 
-});
-
-
-
- nextPage.addEventListener('click',()=>{
-    
-    
     lastPage.classList.remove('hidden')
     createGridCursos.innerHTML='';
     count+=1
@@ -357,13 +357,11 @@ btnCerrarModalCapacitate.addEventListener('click', ()=>{
     });
     
 
-   
- })
+}
 
+function anteriorPagina(){
 
-lastPage.addEventListener('click',()=>{
-    
-    count-=1
+count-=1
 
     if (count == 1) {
         
@@ -394,9 +392,13 @@ lastPage.addEventListener('click',()=>{
 
     });
    
-  
 
-  
 
- })
+}
+
+
+
+
+
+
 
