@@ -53,6 +53,10 @@
     --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
     --text-7xl--line-height: 1;
+    --text-8xl: 6rem;
+    --text-8xl--line-height: 1;
+    --text-9xl: 8rem;
+    --text-9xl--line-height: 1;
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
@@ -81,6 +85,7 @@
     --color-accent-orange: oklch(85.9% 0.240 50.08);
     --color-background-light: oklch(98% 0.0 80.0);
     --color-background-dark: oklch(12.9% 0.042 264.695);
+    --color-background-green: oklch(84.1% 0.238 128.85);
   }
 }
 @layer base {
@@ -522,12 +527,10 @@
   }
   .scale-\[3\] {
     scale: 3;
-<<<<<<< HEAD
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-=======
->>>>>>> feature/sections
+
   }
   .cursor-pointer {
     cursor: pointer;
@@ -742,13 +745,11 @@
     --tw-gradient-position: to top in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-<<<<<<< HEAD
   .from-black {
     --tw-gradient-from: var(--color-black);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
-=======
->>>>>>> feature/sections
+
   .from-black\/50 {
     --tw-gradient-from: color-mix(in srgb, #000 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -813,12 +814,10 @@
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
   }
-<<<<<<< HEAD
   .py-0 {
     padding-block: calc(var(--spacing) * 0);
   }
-=======
->>>>>>> feature/sections
+
   .py-0\.5 {
     padding-block: calc(var(--spacing) * 0.5);
   }
@@ -876,6 +875,10 @@
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
+  }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
   .text-base {
     font-size: var(--text-base);
@@ -1029,12 +1032,10 @@
   .uppercase {
     text-transform: uppercase;
   }
-<<<<<<< HEAD
   .underline {
     text-decoration-line: underline;
   }
-=======
->>>>>>> feature/sections
+
   .placeholder-gray-500 {
     &::placeholder {
       color: var(--color-gray-500);
@@ -1065,15 +1066,13 @@
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
-<<<<<<< HEAD
   .shadow-accent-orange {
     --tw-shadow-color: oklch(85.9% 0.240 50.08);
     @supports (color: color-mix(in lab, red, red)) {
       --tw-shadow-color: color-mix(in oklab, var(--color-accent-orange) var(--tw-shadow-alpha), transparent);
     }
   }
-=======
->>>>>>> feature/sections
+
   .shadow-accent-orange\/20 {
     --tw-shadow-color: color-mix(in srgb, oklch(85.9% 0.240 50.08) 20%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -1092,13 +1091,11 @@
       --tw-shadow-color: color-mix(in oklab, color-mix(in oklab, var(--color-primary) 20%, transparent) var(--tw-shadow-alpha), transparent);
     }
   }
-<<<<<<< HEAD
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
-=======
->>>>>>> feature/sections
+
   .blur-3xl {
     --tw-blur: blur(var(--blur-3xl));
     filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
@@ -1310,6 +1307,16 @@
   .md\:col-span-2 {
     @media (width >= 48rem) {
       grid-column: span 2 / span 2;
+    }
+  }
+  .md\:col-span-3 {
+    @media (width >= 48rem) {
+      grid-column: span 3 / span 3;
+    }
+  }
+  .md\:col-span-4 {
+    @media (width >= 48rem) {
+      grid-column: span 4 / span 4;
     }
   }
   .md\:row-span-2 {
