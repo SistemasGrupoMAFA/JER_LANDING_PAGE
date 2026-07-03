@@ -385,31 +385,31 @@ r:cursor-pointer  hover:scale-105 hover:transition duration-700 ease-in-out grou
 </div>
 </div>
 <div class="p-10 md:w-2/3">
-<form class="grid grid-cols-1 md:grid-cols-2 gap-6" action="https://formspree.io/f/mqeyqpbg" method="post">
+<form id ="idForm"  class="grid grid-cols-1 md:grid-cols-2 gap-6" action="https://formspree.io/f/xgojrvgo" method="post">
 <div class="flex flex-col gap-2">
 <label class="text-sm font-bold">Nombre completo</label>
 
-<input class="rounded-lg border-[#dbdee6]  dark:border-[#2a303f] focus:ring-accent-orange focus:border-accent-orange" placeholder="Santiago Jimenez" type="text" name="fullName"/>
+<input id ="idFullName" class="rounded-lg border-[#dbdee6]  dark:border-[#2a303f] focus:ring-accent-orange focus:border-accent-orange" placeholder="Santiago Jimenez" type="text"  name="Nombre completo"/>
 </div>
 <div class="flex flex-col gap-2">
 <label class="text-sm  font-bold">Nombre de tu empresa</label>
-<input class="rounded-lg border-[#dbdee6]  dark:border-[#2a303f] focus:ring-accent-orange focus:border-accent-orange" placeholder="Building and consulting" type="text" name="companyName"/>
+<input id ="idCompany" class="rounded-lg border-[#dbdee6]  dark:border-[#2a303f] focus:ring-accent-orange focus:border-accent-orange" placeholder="Building and consulting" type="text"  name="Nombre de la compañia"/>
 </div>
 <div class="flex flex-col gap-2">
 <label class="text-sm  font-bold">Email de contacto</label>
-<input class="rounded-lg border-[#dbdee6]  dark:border-[#2a303f] focus:ring-accent-orange focus:border-accent-orange" placeholder="ventas@company.com" type="email" name="email"/>
+<input id ="idEmail" class="rounded-lg border-[#dbdee6]  dark:border-[#2a303f] focus:ring-accent-orange focus:border-accent-orange" placeholder="ventas@company.com" type="email"  name="Correo electronico"/>
 </div>
 <div class="flex flex-col gap-2">
 <label class="text-sm  font-bold">Número de teléfono</label>
-<input class="rounded-lg border-[#dbdee6]  dark:border-[#2a303f] focus:ring-accent-orange focus:border-accent-orange" placeholder="+52 442 435 3424" type="tel" name="phoneNumber"/>
+<input id ="idPhoneNumber" class="rounded-lg border-[#dbdee6]  dark:border-[#2a303f] focus:ring-accent-orange focus:border-accent-orange" placeholder="+52 442 435 3424" type="tel"  name="Número de telefono"/>
 </div>
 <div class="flex flex-col gap-2 md:col-span-2">
 <label class="text-sm  font-bold">Mensaje</label>
-<textarea class=" resize-none  rounded-lg border-[#dbdee6]  dark:border-[#2a303f] focus:ring-accent-orange focus:border-accent-orange" placeholder="Hablanos más sobre tu proyecto, ¿En que podemos ayudarte?" rows="4" name="message"></textarea>
+<textarea id =idMessage  class=" resize-none  rounded-lg border-[#dbdee6]  dark:border-[#2a303f] focus:ring-accent-orange focus:border-accent-orange"  placeholder="Hablanos más sobre tu proyecto, ¿En que podemos ayudarte?" rows="4" name="Mensaje"></textarea>
 
 </div>
 <div class="md:col-span-2">
-<button type="submit" class=" cursor-pointer w-full bg-primary text-white text-base font-bold h-12 md:h-14 px-8 rounded-lg shadow-lg  hover:scale-105 hover:transition duration-700 ease-in-out">
+<button id="submitId" type="submit" class="cursor-pointer w-full bg-primary text-white text-base font-bold h-12 md:h-14 px-8 rounded-lg shadow-lg  hover:scale-105 hover:transition duration-700 ease-in-out">
                                     Contactar
  </button>
 </div>
@@ -750,5 +750,7 @@ r:cursor-pointer  hover:scale-105 hover:transition duration-700 ease-in-out grou
     <script src="./src/js/dark_light_mode.js"></script>
     <script src="./src/js/menuDeplegable.js"></script>
     <script src="./src/js/modal_controller.js"></script>
+    <script src="./src/js/cleanForm.js"></script>
+    
 </body>
 </html>
