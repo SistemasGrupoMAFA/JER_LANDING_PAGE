@@ -31,8 +31,7 @@
 
 
 <!-- Navigation -->
-
-<header  class="fixed top-0 z-50 w-full   bg-background-light backdrop-blur-md px-4 md:px-10 lg:px-40 py-0.5">
+<header  class="sticky top-0 z-50 w-full bg-background-light backdrop-blur-md px-4 md:px-10 lg:px-40 py-0.5">
 
 <div class="flex items-center justify-between whitespace-nowrap">
 <div class="size-36 flex items-center justify-center overflow-hidden rounded-md">
@@ -86,57 +85,73 @@
 
 </div>
 </header>
+
+
+
+
+
+
+
+
 <!-- Hero Section -->
-<main class="flex-1">
+<main class="flex-1 pt-64">
 <!-- <div class="px-4 md:px-10 lg:px-40 py-5"> -->
+
+  <main class="flex-1 pt-0">
 <div>
 <div class="@container">
 <div class="@[480px]:p-0">
-<div class="flex min-h-[660px] flex-col gap-6 bg-cover bg-center bg-no-repeat items-start justify-center px-6 md:px-16" data-alt="Industrial construction site with workers wearing bright safety gear" style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuALXPuuxhof3-j1cONj_xP_ObIPiSR07ojSu2vZUq_f3n3rNgapO95cAX3t-W4YkHF_FTZH1inBqn-JiKHQDiXwuspFWx4Npy9pxT0HMYj42w-qrXzbrmIke4tj7KCw2q2eXSn7uH2fIWnpD18UXcfk6grCWzome1obStZbrafoc5Q7UmZBmnVYMYVOTQ9Z7jEACqYskA4Mx_HoKIbcsVwez1YSZJ7wZ8-81RtRVLA3uaOGGv_DHT-811HmmYvfGr1veBnIkvULrmdT");'>
 
+<!-- 
+  MODIFICACIÓN AQUÍ: 
+  Añadimos `pt-28` (u otra medida según el alto de tu navbar) para empujar el CONTENIDO del texto hacia abajo, 
+  pero permitiendo que el FONDO de la imagen cubra todo el inicio de la página.
+-->
+<div class="flex flex-col gap-6 bg-cover bg-center bg-no-repeat items-start justify-center px-6 md:px-16 min-h-[660px] pt-28 pb-12" 
+     data-alt="Personal de seguridad industrial profesional posando en oficina corporativa" 
+     style='background-image: linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.6) 100%), url("./src/img/multimedia/FOTO_DE_PORTADA_PRINCIPAL.webp");'>
+
+     
 <div class="flex flex-col gap-4 w-full">
   
-    <h1 class=" text-4xl lg:text-7xl sm:text-5xl font-bold text-background-light leading-tight md:leading-tight">
+    <h1 class="text-4xl lg:text-7xl sm:text-5xl font-bold text-background-light leading-tight md:leading-tight">
         Seguridad que cumple, confianza que protege
     </h1>
 
-    <div class="relative h-10 md:h-14 w-full mx-auto overflow-hidden">
+    <div class="relative h-16 sm:h-12 md:h-14 w-full mx-auto overflow-hidden">
 
-        <div class="carousel-item text-gray-100 text-2xl md:text-4xl font-medium opacity-90">
-                       Profesionales calificados, operaciones seguras
-        </div>
-        <div class="carousel-item text-gray-100 text-2xl md:text-4xl font-medium opacity-90">
-                        Cobertura nacional, respuesta inmediata.
-        </div>
-        <div class="carousel-item text-gray-100 text-2xl md:text-4xl font-medium opacity-90">
-                       Disponibles los 365 días del año, donde nos necesites.
-        </div>
+    <div class="carousel-item text-xl sm:text-2xl md:text-4xl font-medium opacity-90 text-gray-100">
+        Profesionales calificados, operaciones seguras
+    </div>
+    
+    <div class="carousel-item text-xl sm:text-2xl md:text-4xl font-medium opacity-90 text-gray-100">
+        Cobertura nacional, respuesta inmediata.
+    </div>
+    
+    <div class="carousel-item text-xl sm:text-2xl md:text-4xl font-medium opacity-90 text-gray-100">
+        Disponibles los 365 días del año, donde nos necesites.
+    </div>
 
-         <div class="carousel-item text-gray-100 text-2xl md:text-4xl font-medium opacity-90">
-                       Menos riesgo, más avance.
-
-        </div>
-
+    <div class="carousel-item text-xl sm:text-2xl md:text-4xl font-medium opacity-90 text-gray-100">
+        Menos riesgo, más avance.
     </div>
 
 </div>
 
-
-
+</div>
 
 <div class="flex flex-wrap gap-4 mt-4">
-    <!-- Those are 2 buttons for feature characteristics -->
-<button id="btnContactUs" class="bg-accent-orange text-white text-base font-bold h-12 md:h-14 px-8 rounded-lg shadow-lg hover:scale-105 hover:bg-white/20 active:scale-95 hover:cursor-pointer transition-all">
-                                    Solicita tu cotización
-                                </button>
-<!-- <button class="bg-primary text-white text-base font-bold h-12 md:h-14 px-8 rounded-lg shadow-lg hover:scale-105 hover:bg-white/20 active:scale-95 transition-all">
-                                    Our Services
-                                </button>  -->
+    <button id="btnContactUs" class="bg-accent-orange text-white text-base font-bold h-12 md:h-14 px-8 rounded-lg shadow-lg hover:scale-105 hover:bg-white/20 active:scale-95 hover:cursor-pointer transition-all">
+        Solicita tu cotización
+    </button>
 </div>
 </div>
 </div>
 </div>
 </div>
+
+
+
 <!-- Feature Section (About) -->
 <section class="px-4 md:px-10 lg:px-40 py-16 bg-background-light">
     
@@ -190,13 +205,13 @@
         <div class="rounded-2xl shadow-2xl relative z-10 w-full aspect-[4/5] overflow-hidden bg-slate-200 dark:bg-slate-900" id="hero-carousel">
             <!-- Slides -->
             <div class="carousel-slide absolute inset-0 opacity-100 z-10">
-                <img alt="Safety engineer inspecting machinery" class="w-full h-full object-cover" data-alt="Safety engineer inspecting complex industrial machinery" src="./src/img/multimedia/capacitacion.jpg"/>
+                <img alt="Safety engineer inspecting machinery" class="w-full h-full object-cover" data-alt="Safety engineer inspecting complex industrial machinery" src="./src/img/multimedia/CAPACITACION.webp"/>
             </div>
             <div class="carousel-slide absolute inset-0 opacity-100 z-10">
-                <img alt="Safety engineer inspecting machinery" class="w-full h-full object-cover" data-alt="Safety engineer inspecting complex industrial machinery" src="./src/img/multimedia/mallas_seguridad.jpg"/>
+                <img alt="Safety engineer inspecting machinery" class="w-full h-full object-cover" data-alt="Safety engineer inspecting complex industrial machinery" src="./src/img/multimedia/MALLAS_SEGURIDAD.jpg"/>
             </div>
             <div class="carousel-slide absolute inset-0 opacity-100 z-10">
-                <img alt="Safety engineer inspecting machinery" class="w-full h-full object-cover" data-alt="Safety engineer inspecting complex industrial machinery" src="./src/img/multimedia/supervision.jpg"/>
+                <img alt="Safety engineer inspecting machinery" class="w-full h-full object-cover" data-alt="Safety engineer inspecting complex industrial machinery" src="./src/img/multimedia/EQUIPO_JER_OFICINAS.webp"/>
             </div>
         </div>
     </div>
@@ -266,8 +281,8 @@
   <div class="flex flex-col lg:flex-row items-center gap-16">
     <div class="w-full lg:w-1/2 relative gap-36">
       <div class="grid grid-cols-2">
-        <img class="rounded-xl shadow-lg w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB83bD3ppWcu9JeWEv-ji3dH5naT0qpEHvJC0JlH6cL-GZU75IpjYYrT313y8c1NU6VseT95sMv8aopxOaZ1XtCVw5dcDo1Q-6ap7jr-yRrXKowbhl9ocGS7RpD387ckJazTB4ve7gVYrnshy8_T6I_OwUhp7jJRB0fyWdqPUBRaHIjLfLJorUF133uS-9oM8YdYAC1Z8uvxTPuKgStgO33-jVU0BVpKCqfvY_kcAyGvsJOPLb9nyAxTKgQ5c1VFkD8QMIhlffUFmGK" alt="Factory worker operating industrial machinery safely"/>
-        <img class="rounded-xl shadow-lg w-full h-48 object-cover mt-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5FcUP_vf7viBF2hBlbjtXki5jJ3gL1DmmYOKNUvIYHYsBHpCOWd4zFSiSBnJzlazn9DAUXQVDS1f_IJfUNVcAqjYYDD368lSlhdYq7PL_WPzzQ4gDGSUF_zQin4cY4Gy7ea9p8IO5BBK2VUODPpTuZyFcsOkztGqPoZsHzvB0rW2nxtEbMKE5f8nhXruUz0EkDZ1FutfVAd-4Z-WEc0JT561kONiawiJpi58zijHmBy9LJnyM24AGgLusuqq22_ve5hgF0BX7M93_" alt="Two engineers discussing technical plans on site"/>
+        <img class="rounded-xl shadow-lg w-full h-48 object-cover" src="./src/img/multimedia/COLADO_1.webp" alt="Factory worker operating industrial machinery safely"/>
+        <img class="rounded-xl shadow-lg w-full h-48 object-cover mt-8" src="./src/img/multimedia/SUPERVISION.webp" alt="Two engineers discussing technical plans on site"/>
       </div>
       <button id="btnShowModalGaleria" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-white p-8 rounded-2xl shadow-2xl flex flex-col items-center cursor-pointer hover:scale-105 transition duration-700 ease-in-out">
         <span class="text-4xl font-black">Visitar</span>
@@ -652,94 +667,13 @@ r:cursor-pointer  hover:scale-105 hover:transition duration-700 ease-in-out grou
 <div class="grid grid-cols-1 md:grid-cols-4 auto-rows-[280px] gap-6">
 <!-- Item 1: Large Featured (2x2) -->
 <div class="gallery-item relative md:col-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
-<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/extintor.png"/>
-<div class="overlay absolute inset-0 flex items-center justify-between px-10">
-<div class="flex flex-col">
-<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
-<h3 class="text-white text-xl font-bold">Automation Core</h3>
-</div>
-<span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
-</div>
+<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/SUPERVISION_REVOLVEDORA.webp"/>
+
 </div>
 <!-- Item 2: Vertical Detail (1x2) -->
 <div class="gallery-item relative md:col-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
-<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/CPR.png"/>
-<div class="overlay absolute inset-0 flex items-center justify-between px-10">
-<div class="flex flex-col">
-<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
-<h3 class="text-white text-xl font-bold">Automation Core</h3>
+<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/CALISTENIA.webp"/>
 </div>
-<span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
-</div>
-</div>
-<!-- Item 3: Standard (1x1) -->
-<div class="gallery-item relative md:col-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
-<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/SEGURINES1.png"/>
-<div class="overlay absolute inset-0 flex items-center justify-between px-10">
-<div class="flex flex-col">
-<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
-<h3 class="text-white text-xl font-bold">Automation Core</h3>
-</div>
-<span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
-</div>
-</div>
-<!-- Item 4: Standard (1x1) -->
-<div class="gallery-item relative md:col-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
-<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/SEGURINES1.png"/>
-<div class="overlay absolute inset-0 flex items-center justify-between px-10">
-<div class="flex flex-col">
-<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
-<h3 class="text-white text-xl font-bold">Automation Core</h3>
-</div>
-<span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
-</div>
-</div>
-<!-- Item 5: Wide Featured (2x1) -->
-<div class="gallery-item relative md:col-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
-<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/TRABAJO_EN_ALTURAS.png"/>
-<div class="overlay absolute inset-0 flex items-center justify-between px-10">
-<div class="flex flex-col">
-<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
-<h3 class="text-white text-xl font-bold">Automation Core</h3>
-</div>
-<span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
-</div>
-</div>
-<!-- Item 6: Standard (1x1) -->
-<div class="gallery-item relative md:col-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
-<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/colado_sedis.png"/>
-<div class="overlay absolute inset-0 flex items-center justify-between px-10">
-<div class="flex flex-col">
-<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
-<h3 class="text-white text-xl font-bold">Automation Core</h3>
-</div>
-<span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
-</div>
-</div>
-<!-- Item 7: Standard (1x1) -->
-<div class="gallery-item relative md:col-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
-<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/grupo_3_bosque.png"/>
-<div class="overlay absolute inset-0 flex items-center justify-between px-10">
-<div class="flex flex-col">
-<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
-<h3 class="text-white text-xl font-bold">Automation Core</h3>
-</div>
-<span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
-</div>
-</div>
-
-<!-- Item 8: Standard (1x1) -->
-<div class="gallery-item relative md:col-span-2 rounded-3xl overflow-hidden border border-gray-100 dark:border-gray-800 bento-bg shadow-sm">
-<img class="h-full w-full object-cover" data-alt="High tech industrial manufacturing facility" src="./src/img/multimedia/SEGURINES1.png"/>
-<div class="overlay absolute inset-0 flex items-center justify-between px-10">
-<div class="flex flex-col">
-<span class="text-white font-black text-xs tracking-[0.3em] mb-1">INDUSTRIAL</span>
-<h3 class="text-white text-xl font-bold">Automation Core</h3>
-</div>
-<span class="material-symbols-outlined text-white text-3xl">arrow_forward</span>
-</div>
-</div>
-
 </div>
 </div>
 </div>
