@@ -53,33 +53,5 @@ btnCerrarModalSupervisorSeguridadIndustrial.addEventListener('click', ()=>{
 
 
 
-//galeria de fotos
-
-const showModalGaleria = document.getElementById('modalDetalleGaleria');
-
-const btnCerrarModalGaleria = document.getElementById('btnCerrarModalGaleria');
-const btnAbrirModalGaleria =  document.getElementById('btnShowModalGaleria');
-
-
-
-
-
-// Accion opara abrir el detalle  capacitate 
-btnAbrirModalGaleria.addEventListener('click',()=>{
-
-    showModalGaleria.classList.remove('hidden');
-    showModalGaleria.classList.add('flex');
-    document.body.style.overflow = 'hidden'; // Bloquea el scroll de fondo
-    
-   
-})
-
-// Accion opara cerrar el detalle capacitate 
-btnCerrarModalGaleria.addEventListener('click', ()=>{
-
-    showModalGaleria.classList.add('hidden');
-    document.body.style.overflow = 'auto'; // Re-habilita el scroll de la página
-
-});
 
 
